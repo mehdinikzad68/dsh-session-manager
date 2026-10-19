@@ -80,6 +80,19 @@ DSH restart.
 - After a delete, the sidebar hides the row via archive; the session summary
   disappears from lists on the next refresh.
 
+## Roadmap
+
+Feature ideas on deck, roughly in order — several inspired by the community
+plugin [dsh-session-manager](https://github.com/hkkz9522/dsh-session-manager)
+by hkkz9522:
+
+- **Search & filter** in the management page — match by title, session id, and
+  workspace path, plus an "older than N days" filter.
+- **Richer batch mode** — select-all-matching, per-group actions, and a
+  preview summary dialog before destructive bulk deletes.
+- **Workspace visibility** — archive/unarchive a whole workspace from the
+  management page.
+
 ## License
 
 MIT © Mehdi Nikzad

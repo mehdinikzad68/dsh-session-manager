@@ -1,0 +1,13 @@
+# dsh-session-manager — bundle patch.
+#
+# Applied when the package is installed and enabled as a bundle in a DSH
+# profile (Web "Plugins" page, `dsh plugin add …`, or the plugin_manager
+# tool). It registers the single Loader row that mounts the plugin; the
+# row name is this package's npm name, resolved from the profile's
+# node_modules after installation.
+#
+# DSH bundle-patch convention: a patch row replaces the targeted row's
+# whole config, so every row must restate each key it owns.
+- insert:
+    - id: session-manager
+      name: dsh-session-manager

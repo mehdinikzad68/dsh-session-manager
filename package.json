@@ -1,0 +1,52 @@
+{
+  "name": "dsh-session-manager",
+  "version": "0.1.0",
+  "description": "Delete old DSH sessions and workspace data from the Web GUI: a per-session \"Delete\" row in the sidebar menu plus a management settings page with sizes, bulk delete, and a restorable trash — the Host half moves session directories under $DSH_HOME/trash/sessions.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehdinikzad68/dsh-session-manager.git"
+  },
+  "homepage": "https://github.com/mehdinikzad68/dsh-session-manager#readme",
+  "bugs": {
+    "url": "https://github.com/mehdinikzad68/dsh-session-manager/issues"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.fa.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": [
+        "./cordis.patch.yml"
+      ]
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "sessions",
+    "cleanup",
+    "storage"
+  ],
+  "license": "MIT"
+}

@@ -1,6 +1,6 @@
 {
   "name": "dsh-session-manager",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Delete old DSH sessions and workspace data from the Web GUI: a per-session \"Delete\" row in the sidebar menu plus a management settings page with sizes, bulk delete, and a restorable trash — the Host half moves session directories under $DSH_HOME/trash/sessions.",
   "repository": {
     "type": "git",

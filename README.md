@@ -13,7 +13,9 @@ This plugin fills that gap:
 - **Settings → Session Manager** — a management page listing every registered
   workspace and every orphaned directory with per-session sizes, event counts,
   and dates: per-row delete, checkbox bulk delete, and *Delete workspace data…*
-  (removes the registration **and** its session logs).
+  (removes the registration **and** its session logs). A **search box** matches
+  title / session id / path, and an **older-than** filter narrows the list by
+  last activity.
 - **Trash, not `rm`** — deleted session directories are *moved* to
   `$DSH_HOME/trash/sessions/<timestamp>--<id>/` with a `manifest.json`, so the
   settings page can **Restore** them until you *Empty trash*.
@@ -86,8 +88,6 @@ Feature ideas on deck, roughly in order — several inspired by the community
 plugin [dsh-session-manager](https://github.com/hkkz9522/dsh-session-manager)
 by hkkz9522:
 
-- **Search & filter** in the management page — match by title, session id, and
-  workspace path, plus an "older than N days" filter.
 - **Richer batch mode** — select-all-matching, per-group actions, and a
   preview summary dialog before destructive bulk deletes.
 - **Workspace visibility** — archive/unarchive a whole workspace from the
